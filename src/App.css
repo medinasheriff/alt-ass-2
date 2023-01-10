@@ -1,0 +1,155 @@
+html {
+    box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1400px;
+    margin-inline: 1rem;
+}
+
+body {
+    background-color: #ffe5ec;
+}
+
+button {
+    background-color: #fb6f92;
+    color: antiquewhite;
+    border: none;
+    padding: 8px;
+    font-size: medium;
+    margin-right: 5px;
+    border-radius: 0px 25px;
+}
+
+button:disabled {
+    background-color: #ffc2d1;
+    cursor: not-allowed;
+}
+
+button.active {
+    background-color: rgb(236, 39, 39);
+    color: whitesmoke;
+    box-shadow: 4px 24px 6px;
+}
+
+.navbar {
+    background-color: #fb6f92;
+    padding: 10px;
+    border-radius: 0px 25px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.navtabs {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.navbar a {
+    margin-inline: 15px;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: 'Noto Serif', serif;
+    color: #ffc2d1;
+}
+
+.logo {
+    font-family: 'Lobster', cursive;
+    font-size: 28px;
+    color: rgb(29, 28, 28);
+
+}
+
+.users {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.user {
+    margin: 15px 0px;
+
+}
+
+.index {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Noto Serif', serif;
+    color: rgb(39, 37, 37);
+    line-height: 2.5rem;
+
+}
+
+span {
+    font-size: 2rem;
+    font-family: 'Lobster', cursive;
+    color: #fb6f92;
+}
+
+.heading {
+    padding: 20px 0px;
+    font-size: 3rem;
+}
+
+.text{
+    font-size: larger;
+    padding-bottom: 30px;
+}
+.quote{
+    padding-bottom: 40px;
+}
+
+.index button{
+    padding: 16px;
+    font-size: large;
+    margin-top: 100px;
+}
+.members{
+    font-family: 'Noto Serif', serif;
+    padding: 20px; 
+    font-size: 2rem;
+    color: rgb(43, 42, 42);
+    font-weight: lighter;
+    font-style: oblique;
+}
+.about{
+    font-size: 1.3rem;
+    line-height: 2.5rem;
+    padding: 30px;
+}
+.fallback{
+  position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 2rem;
+}
+ .error{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    color: red;
+    font-size: 2rem;
+   text-align:center;
+    
+  }
+
+@media(max-width:480px) {
+    .users {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
